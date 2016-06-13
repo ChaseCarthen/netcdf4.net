@@ -22,6 +22,11 @@ namespace ASA.NetCDF4 {
 
         private Array mArray;
 
+        ~NcArray()
+        {
+            mArray = null;
+        }
+
         public NcArray() {
             isNull = true;
         }
